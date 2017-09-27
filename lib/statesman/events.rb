@@ -32,7 +32,6 @@ module Statesman
       end
 
       transition_to!(new_state.first, metadata)
-      true
     end
 
     def trigger(event_name, metadata = {})
